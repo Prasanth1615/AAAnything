@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service &amp; EULA - AA Anything</title>
+  <meta name="description" content="Terms of Service, End-User License Agreement, and Driver Safety Disclaimers for AA Anything.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%2232%22%20height=%2232%22><text y=%2226%22 font-size=%2226%22>🚗</text></svg>">
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: #131c2e;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border-color: #1e293b;
+      --primary: #3b82f6;
+      --danger-bg: #2d1215;
+      --danger-border: #991b1b;
+      --danger-text: #fca5a5;
+      --code-bg: #1e293b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg-color: #f8fafc;
+        --card-bg: #ffffff;
+        --text-main: #0f172a;
+        --text-muted: #475569;
+        --border-color: #e2e8f0;
+        --primary: #2563eb;
+        --danger-bg: #fef2f2;
+        --danger-border: #f87171;
+        --danger-text: #991b1b;
+        --code-bg: #f1f5f9;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text-main);
+      background-color: var(--bg-color);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      border-bottom: 1px solid var(--border-color);
+      background: var(--card-bg);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+    .nav-container {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-main);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+    .doc-card {
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+    h1 {
+      font-size: 2.1rem;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 16px;
+    }
+    .meta p {
+      margin: 4px 0;
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      color: var(--text-main);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+    }
+    p, li {
+      color: var(--text-main);
+      font-size: 1rem;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    code {
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .warning-box {
+      background-color: var(--danger-bg);
+      border: 2px solid var(--danger-border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+      color: var(--danger-text);
+    }
+    .warning-box h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+      color: var(--danger-text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .warning-box ol {
+      margin-bottom: 0;
+      padding-left: 20px;
+    }
+    .warning-box li {
+      color: var(--danger-text);
+      margin-bottom: 10px;
+    }
+    .warning-box strong {
+      color: var(--danger-text);
+    }
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 32px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <span>🚗</span> AA Anything
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="https://github.com/kododake/AAAnything" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="doc-card">
+      <h1>Terms of Service &amp; End-User License Agreement</h1>
+      <div class="meta">
+        <p><strong>Last Updated:</strong> October 9, 2026</p>
+        <p><strong>Product:</strong> AA Anything</p>
+        <p><strong>Author / Publisher:</strong> Kododake</p>
+        <p><strong>Repository:</strong> <a href="https://github.com/kododake/AAAnything" target="_blank" rel="noopener noreferrer">https://github.com/kododake/AAAnything</a></p>
+      </div>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>By downloading, installing, accessing, compiling, or using <strong>AA Anything</strong> (hereinafter referred to as the "Software" or "Application"), you agree to be bound by the terms and conditions set forth in this Terms of Service and End-User License Agreement ("Agreement"). If you do not agree to these terms, do not install, access, or use the Software.</p>
+
+      <h2>2. STRICT DRIVER SAFETY NOTICE &amp; USE AT YOUR OWN RISK</h2>
+      <div class="warning-box">
+        <h3>⚠️ CRITICAL WARNING — DO NOT INTERACT OR VIEW WHILE OPERATING A VEHICLE</h3>
+        <ol>
+          <li><strong>USE ENTIRELY AT YOUR OWN RISK:</strong> The Software modifies applications to enable their projection onto Android Auto-compatible head units. The use of this Software and any modified application is done at your own sole discretion and risk.</li>
+          <li><strong>NO DISTRACTED DRIVING:</strong> Operating or visually focusing on video displays, complex graphical user interfaces, web browsers, or non-driving-essential applications while driving a motor vehicle is <strong>STRICTLY PROHIBITED</strong> by road traffic laws, motor vehicle safety standards, and regulations across jurisdictions (including, but not limited to, the Road Traffic Act of Japan and equivalents worldwide).</li>
+          <li><strong>ZERO LIABILITY FOR ACCIDENTS OR VIOLATIONS:</strong> The author(s), contributor(s), and publisher of this Software assume <strong>NO RESPONSIBILITY OR LIABILITY</strong> for any direct, indirect, incidental, consequential, special, punitive, or exemplary damages, traffic citations, vehicle damage, bodily injuries, loss of life, or legal repercussions arising from the use or misuse of the Software or modified applications in a vehicle.</li>
+          <li><strong>PASSENGER USE ONLY WHEN STATIONARY:</strong> Display capabilities provided by patched applications are strictly intended for stationary vehicle scenarios (e.g., parked with the parking brake engaged) or for vehicle passengers where permitted by local law. Drivers must maintain their eyes on the road and focus entirely on safe vehicle operation at all times.</li>
+        </ol>
+      </div>
+
+      <h2>3. Educational, Experimental, and Interoperability Purposes</h2>
+      <p>The Software is developed and provided strictly for educational, experimental, research, and personal device interoperability purposes. The Software provides client-side tooling that permits users to unpack, adjust Android display parameters, and re-sign Android packages (<code>.apk</code>) residing locally on their own devices.</p>
+
+      <h2>4. Prohibition of Sharing and Redistribution of Patched APKs</h2>
+      <ol>
+        <li><strong>NO REDISTRIBUTION OF MODIFIED PACKAGES:</strong> Users are strictly prohibited from distributing, publishing, transmitting, hosting, selling, licensing, or sharing any <code>.apk</code> file modified, generated, or patched by the Software to any third party or public service (including online file hosts, social networks, app repositories, or forums).</li>
+        <li><strong>LOCAL DEVICE LIMITATION:</strong> Patched packages are cryptographically signed with keys unique to the local installation environment. They are engineered and licensed strictly for personal, private execution on the user's individual device.</li>
+        <li><strong>RESPECT THIRD-PARTY INTELLECTUAL PROPERTY:</strong> You acknowledge and agree that patching third-party applications does not grant you intellectual property rights, trademarks, or copyrights belonging to the original app developers or copyright holders. You remain solely responsible for complying with all applicable licenses, terms of service, and end-user agreements of the original applications you choose to modify.</li>
+      </ol>
+
+      <h2>5. Subscription, Licensing, and Free Tier</h2>
+      <ol>
+        <li><strong>Standard Compatibility Tier (Free):</strong> Certain compatibility features (including verified core packages such as media players with free compatibility profiles) are provided free of charge for personal non-commercial use.</li>
+        <li><strong>Pro Subscriptions:</strong> Advanced capabilities, arbitrary application patching, and premium server-assisted compatibility synchronization may require an active Pro subscription or valid license token.</li>
+        <li><strong>Service Continuity:</strong> Licensing verification relies on remote network endpoints. The author reserves the right to modify, adjust, suspend, or discontinue subscription features, license verification infrastructure, or update mechanisms at any time with or without prior notice.</li>
+      </ol>
+
+      <h2>6. System Updates, In-Place Upgrades, and App Data</h2>
+      <ol>
+        <li><strong>Android OS Updates:</strong> Operating system and monthly security updates on the host Android device may affect display projection compatibility. When this occurs, applications can typically be re-patched in-place using AA Anything without data loss.</li>
+        <li><strong>Preservation of AA Anything:</strong> In-place app updating relies on signing configurations stored within the AA Anything application storage. Uninstalling AA Anything may invalidate these keys, preventing seamless in-place updates.</li>
+        <li><strong>No Guarantee of Data Integrity:</strong> While AA Anything is designed to support in-place upgrades that preserve application configurations and user login sessions, you are solely responsible for maintaining adequate backups of your application data. The author is not liable for data loss resulting from application re-patching or uninstallation.</li>
+      </ol>
+
+      <h2>7. Disclaimer of Warranties ("AS IS")</h2>
+      <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW: THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND. THE AUTHOR AND CONTRIBUTORS DISCLAIM ALL WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, SATISFACTORY QUALITY, TITLE, NON-INFRINGEMENT, AND CONTINUED COMPATIBILITY WITH FUTURE ANDROID AUTO OR ANDROID OS RELEASES.</p>
+
+      <h2>8. Limitation of Liability</h2>
+      <p>IN NO EVENT SHALL THE AUTHOR, CONTRIBUTORS, OR AFFILIATES BE LIABLE FOR ANY PERSONAL INJURY, PROPERTY DAMAGE, LOSS OF PROFITS, LOSS OF DATA, DEVICE MALFUNCTION, SYSTEM CRASHES, GOOGLE ACCOUNT ACTION, OR ANY SPECIAL, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL DAMAGES WHATSOEVER ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE SOFTWARE, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, OR OTHERWISE).</p>
+
+      <h2>9. Governing Law and Amendments</h2>
+      <ol>
+        <li>This Agreement shall be construed and governed in accordance with the laws of Japan, excluding its conflicts of law rules.</li>
+        <li>The author reserves the right to revise or update these Terms of Service at any time by updating the documentation repository. Continued use of the Software following any such updates constitutes acceptance of the revised terms.</li>
+      </ol>
+
+      <h2>10. Contact and Inquiries</h2>
+      <p>For issue reports, official updates, and inquiries regarding this Software, visit the official repository:<br>
+      <a href="https://github.com/kododake/AAAnything" target="_blank" rel="noopener noreferrer">https://github.com/kododake/AAAnything</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 AA Anything by Kododake. All rights reserved.</p>
+  </footer>
+</body>
+</html>

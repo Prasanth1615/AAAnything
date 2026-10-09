@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AA Anything - Bring Your Favorite Apps to Your Car Screen</title>
+  <meta name="description" content="Unlock your dashboard. AA Anything brings virtually any Android app to your Android Auto display without rooting.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%2232%22%20height=%2232%22><text y=%2226%22 font-size=%2226%22>🚗</text></svg>">
+  <script defer src="https://stats1.kododake.work/script.js" data-website-id="59e70fb3-64a5-4a96-8ab4-5469f2ab6b4b"></script>
+  <style>
+    :root {
+      --bg-color: #080c16;
+      --card-bg: rgba(255, 255, 255, 0.04);
+      --card-hover: rgba(255, 255, 255, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-color: rgba(255, 255, 255, 0.1);
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --gradient-accent: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      --danger-bg: rgba(239, 68, 68, 0.12);
+      --danger-border: rgba(239, 68, 68, 0.35);
+      --danger-text: #fca5a5;
+      --header-bg: rgba(8, 12, 22, 0.85);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg-color: #f8fafc;
+        --card-bg: #ffffff;
+        --card-hover: #f1f5f9;
+        --text-main: #0f172a;
+        --text-muted: #475569;
+        --border-color: #e2e8f0;
+        --primary: #2563eb;
+        --primary-hover: #1d4ed8;
+        --gradient-accent: linear-gradient(135deg, #0284c7 0%, #4f46e5 50%, #9333ea 100%);
+        --danger-bg: #fef2f2;
+        --danger-border: #fca5a5;
+        --danger-text: #991b1b;
+        --header-bg: rgba(248, 250, 252, 0.88);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-main);
+      background-color: var(--bg-color);
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    header {
+      border-bottom: 1px solid var(--border-color);
+      background: var(--header-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-container {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--text-main);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.5px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 64px 20px 96px;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: #38bdf8;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin: 0 0 20px;
+      line-height: 1.15;
+      letter-spacing: -1px;
+    }
+    .gradient-text {
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 36px;
+      line-height: 1.5;
+    }
+    .cta-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 36px;
+      border-radius: 14px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      text-decoration: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: #ffffff;
+      border: none;
+      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
+    }
+    .btn-primary:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 16px 40px rgba(37, 99, 235, 0.5);
+    }
+    .btn-outline {
+      background: var(--card-bg);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+    .btn-outline:hover {
+      background: var(--card-hover);
+      transform: translateY(-3px);
+    }
+    .safety-banner {
+      background: var(--danger-bg);
+      border: 1.5px solid var(--danger-border);
+      border-radius: 18px;
+      padding: 24px 28px;
+      margin-bottom: 56px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .safety-icon {
+      font-size: 2rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .safety-content h3 {
+      margin: 0 0 6px;
+      font-size: 1.15rem;
+      color: var(--danger-text);
+      font-weight: 800;
+    }
+    .safety-content p {
+      margin: 0;
+      color: var(--danger-text);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 40px;
+      letter-spacing: -0.5px;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 64px;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 32px 28px;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(56, 189, 248, 0.4);
+      background: var(--card-hover);
+    }
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .feature-card h3 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin: 0 0 10px;
+    }
+    .feature-card p {
+      color: var(--text-muted);
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+    .steps-container {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 40px;
+      margin-bottom: 64px;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 28px;
+    }
+    .step-item {
+      position: relative;
+    }
+    .step-number {
+      font-size: 2.5rem;
+      font-weight: 900;
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+      line-height: 1;
+    }
+    .step-item h4 {
+      margin: 0 0 6px;
+      font-size: 1.15rem;
+      font-weight: 800;
+    }
+    .step-item p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 36px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+    footer a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+    footer a:hover {
+      color: var(--primary);
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2.5rem; }
+      .hero p { font-size: 1.1rem; }
+      .steps-container { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <span>🚗</span> AA Anything
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="https://github.com/kododake/AAAnything" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px;">
+        <span class="hero-badge">✨ No Root Required</span>
+        <span class="hero-badge" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.35); color: #34d399;">📱 Designed for Android 15+</span>
+      </div>
+      <h1>
+        Bring Virtually <span class="gradient-text">Any App</span><br>to Android Auto
+      </h1>
+      <p>
+        Tired of limited car apps? Transform your vehicle's dashboard on <strong>Android 15 or newer</strong>. Watch videos, stream favorite shows, and launch almost any app from your phone directly on your car screen.
+      </p>
+      <div class="cta-group">
+        <a href="https://github.com/kododake/AAAnything/releases" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          Get AA Anything Free 🚀
+        </a>
+        <a href="terms.html" class="btn btn-outline">
+          Terms of Service
+        </a>
+      </div>
+    </section>
+
+    <!-- Strict Vehicle Safety Notice: Does not operate while driving -->
+    <div class="safety-banner">
+      <div class="safety-icon">🛑</div>
+      <div class="safety-content">
+        <h3>IMPORTANT: WILL NOT OPERATE WHILE DRIVING</h3>
+        <p>
+          For your safety and in strict accordance with traffic safety laws worldwide, <strong>this application will NOT operate while driving</strong>. All screen projection features are strictly reserved for stationary vehicle use (parked safely) or for vehicle passengers. Looking at the display while driving is strictly prohibited by law.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Key Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">✨</div>
+        <h3>Virtually Any App</h3>
+        <p>Media players, video streaming, games, tools—bring your favorite apps straight to your dashboard without waiting for official car updates.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Zero Rooting</h3>
+        <p>No dangerous unlocking, no voided warranties, no complicated PC commands. Everything works right inside the app on your phone with a single tap.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Seamless Updates</h3>
+        <p>Effortlessly keep your patched apps up to date whenever new versions or Android updates arrive.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📺</div>
+        <h3>Crisp Car Display</h3>
+        <p>Enjoy vibrant video playback and native touchscreen controls tailored specifically for your vehicle's widescreen console.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎁</div>
+        <h3>Free Standard Apps</h3>
+        <p>Popular media players like VLC are 100% free forever. Plug in, launch, and enjoy in your parked car immediately.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3>One-Tap Setup</h3>
+        <p>Pick any app on your phone, tap patch, and watch it instantly appear on your car launcher the moment you connect.</p>
+      </div>
+    </div>
+
+    <div class="steps-container">
+      <h2 style="margin: 0; text-align: center; font-size: 1.8rem; font-weight: 800;">Get Started in 3 Easy Steps</h2>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-number">01</div>
+          <h4>Download App</h4>
+          <p>Grab the latest AA Anything release and install it on your Android phone.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">02</div>
+          <h4>Pick &amp; Patch</h4>
+          <p>Choose any app from your installed apps list and tap "Patch &amp; Install".</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">03</div>
+          <h4>Enjoy in Your Car</h4>
+          <p>Plug into Android Auto while parked and launch your app right from the dashboard!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 AA Anything. Created by Kododake (developer of AA Browser).</p>
+    <p>
+      <a href="terms.html">Terms of Service &amp; EULA</a> &bull; 
+      <a href="https://github.com/kododake/AAAnything" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+    </p>
+  </footer>
+</body>
+</html>
