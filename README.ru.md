@@ -73,8 +73,8 @@
 ## 📄 Документация и ссылки
 
 - [Terms of Service & EULA (English / Markdown)](TERMS_OF_SERVICE.md)
-- [Terms of Service & EULA (English / Web HTML)](terms.html)
-- [Официальный сайт GitHub Pages](index.html)
+- [Terms of Service & EULA (English / Web HTML)](https://kododake.github.io/AAAnything/terms.html)
+- [GitHub Pages Official Site](https://kododake.github.io/AAAnything/)
 
 ---
 

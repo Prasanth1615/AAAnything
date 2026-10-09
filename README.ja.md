@@ -74,8 +74,8 @@
 ## 📄 利用規約・法的文書
 
 - [利用規約・EULA (Markdown版)](TERMS_OF_SERVICE.md)
-- [利用規約・EULA (Web HTML版)](terms.html)
-- [GitHub Pages 公式サイト](index.html)
+- [Terms of Service & EULA (English / Web HTML)](https://kododake.github.io/AAAnything/terms.html)
+- [GitHub Pages Official Site](https://kododake.github.io/AAAnything/)
 
 ---
 
