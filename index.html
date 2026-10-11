@@ -170,6 +170,23 @@
       background: var(--card-hover);
       transform: translateY(-3px);
     }
+    .hero-showcase {
+      margin-top: 48px;
+      display: flex;
+      justify-content: center;
+    }
+    .showcase-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .showcase-img:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 28px 60px rgba(56, 189, 248, 0.25);
+    }
     .safety-banner {
       background: var(--danger-bg);
       border: 1.5px solid var(--danger-border);
@@ -334,6 +351,9 @@
         <a href="terms.html" class="btn btn-outline">
           Terms of Service
         </a>
+      </div>
+      <div class="hero-showcase">
+        <img src="assets/aaanything.png" alt="AA Anything in Action — Android Auto App Patcher" class="showcase-img">
       </div>
     </section>
 

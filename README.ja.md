@@ -7,6 +7,10 @@
 > 🚀 **愛車のナビ画面をアップグレード！**  
 > 「Android Auto で使えるアプリが少なすぎる…」そんな悩みを解消。**AA Anything** は、**Android 15 以降専用**として最適化され、スマホのルート化不要で、スマホに入っている**幅広いアプリ**（※DRM等の著作権保護やセキュリティ制限が施された一部のアプリを除く）を Android Auto の車載ディスプレイに表示・起動できるようにする画期的なアプリです！
 
+<p align="center">
+  <img src="assets/aaanything.png" alt="AA Anything — お気に入りのアプリをクルマの大画面へ！" width="100%">
+</p>
+
 ---
 
 ## 🌐 言語 / Languages

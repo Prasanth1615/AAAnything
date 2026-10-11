@@ -7,6 +7,10 @@
 > 🚀 **Transform your car display.**  
 > Tired of being restricted to a handful of basic car apps? Designed specifically for **Android 15 and newer**, **AA Anything** unlocks your vehicle's dashboard, letting you launch and enjoy a **wide range of Android apps** (excluding certain apps with DRM copyright protection or security restrictions) right on your Android Auto screen without rooting your phone!
 
+<p align="center">
+  <img src="assets/aaanything.png" alt="AA Anything in Action — Bring Your Favorite Apps to Android Auto" width="100%">
+</p>
+
 ---
 
 ## 🌐 Languages / 他の言語で読む
