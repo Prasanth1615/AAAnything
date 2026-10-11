@@ -5,7 +5,7 @@
 [![Android](https://img.shields.io/badge/Android-15%2B%20Only-brightgreen?style=flat-square&logo=android)](https://www.android.com)
 
 > 🚀 **Transform your car display.**  
-> Tired of being restricted to a handful of basic car apps? Designed specifically for **Android 15 and newer**, **AA Anything** unlocks your vehicle's dashboard, letting you launch and enjoy virtually **any Android app** right on your Android Auto screen without rooting your phone!
+> Tired of being restricted to a handful of basic car apps? Designed specifically for **Android 15 and newer**, **AA Anything** unlocks your vehicle's dashboard, letting you launch and enjoy a **wide range of Android apps** (excluding certain apps with DRM copyright protection or security restrictions) right on your Android Auto screen without rooting your phone!
 
 ---
 
@@ -20,7 +20,7 @@
 
 ## 💡 Key Features
 
-- **Virtually Any App:** Enjoy media players, audio apps, and utilities directly on your car screen.
+- **Wide App Compatibility (except DRM-protected or security-restricted apps):** Display and control a wide range of video, music, and utility apps directly on your car screen.
 - **No Root Required:** No device modification or computer needed; configured cleanly directly on your phone.
 - **Seamless In-Place Updates:** Easily keep patched apps up to date with new versions and system updates.
 - **Tailored for In-Car Displays:** Optimized for comfortable viewing and responsive vehicle touchscreen interactions.
@@ -32,7 +32,7 @@
 ## 🚀 Quick Setup (3 Easy Steps)
 
 1. **Download AA Anything:**  
-   Get the latest `AAAnything-1.0.0.apk` from [GitHub Releases](https://github.com/kododake/AAAnything/releases) and install it on your Android phone.
+   Download the latest APK release from [GitHub Releases (Latest)](https://github.com/kododake/AAAnything/releases/latest) and install it on your Android phone.
 2. **Unlock Developer Mode & Enable Unknown Sources:**  
    Follow the guide below (one-time setup).
 3. **Pick & Launch:**  
@@ -51,13 +51,14 @@ To display patched applications on your vehicle screen, you must enable Develope
 
 ---
 
-## 🛑 IMPORTANT: WILL NOT OPERATE WHILE DRIVING
+## 🛑 IMPORTANT: Safety Notice (Stationary / Passenger Use Only)
 
 > ### ⚠️ STRICT SAFETY NOTICE & USE AT YOUR OWN RISK
-> 1. **WILL NOT OPERATE WHILE DRIVING:** For your safety and by strict traffic regulations, **this application will NOT operate while driving**.
-> 2. **STATIONARY OR PASSENGER USE ONLY:** All display features are strictly reserved for passengers or when your vehicle is parked safely (e.g. resting with the parking brake engaged).
-> 3. **ZERO DISTRACTED DRIVING:** Looking at or interacting with video or entertainment screens while operating a vehicle is strictly prohibited by law and leads to severe accidents. Drivers must NEVER look at the screen while driving.
-> 4. **DO NOT SHARE OR DISTRIBUTE PATCHED APKS:** Patched applications are customized solely for your personal device. They will not function on other devices, and distributing modified APKs is strictly prohibited.
+> This application is intended solely for use while safely parked or by passengers. Operating or watching the screen while driving is strictly prohibited by traffic safety laws and regulations.
+> 
+> 1. **STATIONARY OR PASSENGER USE ONLY:** All display features are strictly reserved for passengers or when your vehicle is parked safely (e.g. resting with the parking brake engaged). Drivers must NEVER look at or operate the screen while driving.
+> 2. **USE AT YOUR OWN RISK:** The author assumes no responsibility or liability for any traffic violations, accidents, or damages arising out of the use of this application or patched applications.
+> 3. **DO NOT SHARE OR DISTRIBUTE PATCHED APKS:** Patched applications are customized solely for your personal device. They will not function on other devices, and distributing modified APKs is strictly prohibited and may infringe third-party terms or copyright.
 
 For complete legal terms and disclaimers, please review our [Terms of Service & EULA](TERMS_OF_SERVICE.md) ([Web Version](terms.html)).
 
@@ -68,14 +69,15 @@ Your privacy is strictly protected:
 
 > [!NOTE]
 > - 🕵️ **Self-Hosted Analytics:** We use a private self-hosted **Umami** instance. No IP tracking, no Big Tech trackers.
-> - 📊 **Minimal Anonymous Statistics:** We only track **app open count** and **app version**. Nothing else is collected.
+> - 📊 **Minimal Anonymous Statistics:** We only track **application launch frequency** and **app version**. Nothing else is collected.
 
 ---
 
 ## 📄 Legal & Documentation
 
 - [Terms of Service & EULA (English / Markdown)](TERMS_OF_SERVICE.md)
-- [Terms of Service & EULA (English / Web HTML)](https://kododake.github.io/AAAnything/terms.html)
+- [Terms of Service & EULA (Web HTML)](https://kododake.github.io/AAAnything/terms.html)
+- [Privacy Policy (Web HTML)](https://kododake.github.io/AAAnything/privacy.html)
 - [GitHub Pages Official Site](https://kododake.github.io/AAAnything/)
 
 ---

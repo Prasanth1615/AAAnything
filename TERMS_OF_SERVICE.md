@@ -48,14 +48,22 @@ The Software is developed and provided strictly for educational, experimental, r
 
 ---
 
-## 5. Subscription, Licensing, and Free Tier
+## 5. Subscription, Licensing, Geographic Restrictions, and Refund Policy
 
 1. **Standard Compatibility Tier (Free):**  
-   Certain compatibility features (including verified core packages such as media players with free compatibility profiles) are provided free of charge for personal non-commercial use.
-2. **Pro Subscriptions:**  
-   Advanced capabilities, arbitrary application patching, and premium server-assisted compatibility synchronization may require an active Pro subscription or valid license token.
-3. **Service Continuity:**  
-   Licensing verification relies on remote network endpoints. The author reserves the right to modify, adjust, suspend, or discontinue subscription features, license verification infrastructure, or update mechanisms at any time with or without prior notice.
+   Certain compatibility features (including verified core packages such as media players with free compatibility profiles like VLC) are provided free of charge for personal non-commercial testing and use.
+2. **Mandatory Pre-Subscription Hardware Verification:**  
+   Before subscribing to the Pro tier or purchasing any license, you **MUST** verify that free-tier applications (such as VLC) successfully project and function on your specific vehicle display unit (head unit). If free compatibility apps fail to project or operate on your vehicle hardware, the Pro tier will not function properly.
+3. **Application Incompatibility and Signature Protections:**  
+   You acknowledge and understand that due to Android OS platform security policies, proprietary DRM, integrity checks (e.g. Play Integrity), signature verifications, and architectural constraints, **not all applications can be patched or projected**. The author makes no representation or warranty that any specific third-party application can be projected onto a vehicle display.
+4. **Self-Service Subscription Cancellation and Plan Management via Stripe:**  
+   Users may self-manage, modify, or cancel their ongoing subscriptions at any time directly through the secure Stripe Customer Portal linked within the Application (accessible via "Manage Subscription" or "Sign In / Customer Portal"). Cancellations take effect at the conclusion of the current billing cycle, and no further recurring charges will be incurred once cancelled.
+5. **Immediate Performance, Waiver of Withdrawal Right, and Discretionary Refund Policy:**  
+   You expressly agree that access to the software and digital license begins immediately upon transaction confirmation. To the maximum extent permitted by applicable law, you acknowledge and agree that you waive any statutory right of withdrawal or cooling-off period once performance has begun. Due to the digital nature of the software and immediate license activation, all subscription sales are generally final. However, if you experience insurmountable technical incompatibilities after performing due diligence, you may submit an inquiry via the official contact form available on **kododake.com** or the official GitHub repository. Refund requests are strictly evaluated on an individual basis and **may be refused if legitimate substantiated reasons are lacking, or at the author's sole discretion (there is a possibility of discretionary refund, but strictly no legal entitlement or guarantee)**. If a refund is processed, the associated account and license features will be permanently locked, and subsequent refunds are strictly disallowed.
+6. **Geographic Restriction (Service Exclusion for Residents of Japan):**  
+   Paid subscriptions and commercial licenses are provided exclusively for users residing outside of Japan. The Software does not offer or solicit paid commercial transactions to residents of Japan.
+7. **Pricing, Specifications, and Service Adjustments:**  
+   The author expressly reserves the right to modify, adjust, update, or revise subscription pricing, billing cycles, application specifications, supported capabilities, license verification infrastructure, or update mechanisms at any time with or without prior notice. Price revisions for ongoing subscriptions will take effect in subsequent billing periods in accordance with payment processor policies.
 
 ---
 
@@ -79,18 +87,21 @@ THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITH ALL FAULTS AND WITHOUT
 
 ## 8. Limitation of Liability
 
-IN NO EVENT SHALL THE AUTHOR, CONTRIBUTORS, OR AFFILIATES BE LIABLE FOR ANY PERSONAL INJURY, PROPERTY DAMAGE, LOSS OF PROFITS, LOSS OF DATA, DEVICE MALFUNCTION, SYSTEM CRASHES, GOOGLE ACCOUNT ACTION, OR ANY SPECIAL, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL DAMAGES WHATSOEVER ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE SOFTWARE, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, OR OTHERWISE).
+EXCEPT IN CASES OF INTENTIONAL MISCONDUCT OR GROSS NEGLIGENCE ON THE PART OF THE AUTHOR (OR AS OTHERWISE MANDATED BY MANDATORY PROVISIONS OF APPLICABLE CONSUMER PROTECTION LAWS), IN NO EVENT SHALL THE AUTHOR, CONTRIBUTORS, OR AFFILIATES BE LIABLE FOR ANY PERSONAL INJURY, PROPERTY DAMAGE, LOSS OF PROFITS, LOSS OF DATA, DEVICE MALFUNCTION, SYSTEM CRASHES, GOOGLE ACCOUNT ACTION, OR ANY SPECIAL, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL DAMAGES WHATSOEVER ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE SOFTWARE, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, OR OTHERWISE). TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE TOTAL AGGREGATE LIABILITY OF THE AUTHOR FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE SOFTWARE SHALL BE STRICTLY LIMITED TO THE GREATER OF: (A) THE TOTAL AMOUNT ACTUALLY PAID BY YOU FOR THE SOFTWARE IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR (B) THIRTY US DOLLARS (USD $30.00).
 
 ---
 
-## 9. Governing Law and Amendments
+## 9. Governing Law, Jurisdiction, Severability, and Amendments
 
-1. This Agreement shall be construed and governed in accordance with the laws of Japan, excluding its conflicts of law rules.
-2. The author reserves the right to revise or update these Terms of Service at any time by updating the documentation repository. Continued use of the Software following any such updates constitutes acceptance of the revised terms.
+1. **Governing Law:** This Agreement shall be construed and governed in accordance with the laws of Japan, excluding its conflicts of law rules.
+2. **Exclusive Jurisdiction:** Any dispute, controversy, or claim arising out of or in connection with this Agreement, the Software, or related services shall be submitted to the exclusive jurisdiction of the district court having territorial jurisdiction over the author's domicile (or the summary court having corresponding jurisdiction where applicable) as the court of first instance.
+3. **Severability:** If any provision of this Agreement is held to be invalid, illegal, or unenforceable under applicable law, such provision shall be enforced to the maximum extent permissible, and the remaining provisions shall continue in full force and effect.
+4. **Amendments:** The author reserves the right to revise or update these Terms of Service at any time by updating the documentation repository and official website. Continued use of the Software following any such updates constitutes acceptance of the revised terms.
 
 ---
 
 ## 10. Contact and Inquiries
 
-For issue reports, official updates, and inquiries regarding this Software, visit the official repository:  
-[https://github.com/kododake/AAAnything](https://github.com/kododake/AAAnything)
+For issue reports, official updates, support, and refund inquiry requests regarding this Software, contact the author via the official channels:  
+- **Official Website & Contact Form:** [https://kododake.com](https://kododake.com)  
+- **Official GitHub Repository:** [https://github.com/kododake/AAAnything](https://github.com/kododake/AAAnything)
