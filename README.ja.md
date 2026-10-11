@@ -1,4 +1,4 @@
-# AA Anything 🚗 — お気に入りのアプリをクルマの大画面へ！（日本語版）
+# <img src="assets/icon.png" width="36" height="36" valign="middle" alt="AA Anything Logo"> AA Anything — お気に入りのアプリをクルマの大画面へ！（日本語版）
 
 [![Release](https://img.shields.io/github/v/release/kododake/AAAnything?color=blue&style=flat-square)](https://github.com/kododake/AAAnything/releases)
 [![License](https://img.shields.io/badge/license-Proprietary%20%2F%20EULA-orange?style=flat-square)](TERMS_OF_SERVICE.md)

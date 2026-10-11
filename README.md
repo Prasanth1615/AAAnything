@@ -1,4 +1,4 @@
-# AA Anything 🚗 — Bring Your Favorite Apps to Android Auto!
+# <img src="assets/icon.png" width="36" height="36" valign="middle" alt="AA Anything Logo"> AA Anything — Bring Your Favorite Apps to Android Auto!
 
 [![Release](https://img.shields.io/github/v/release/kododake/AAAnything?color=blue&style=flat-square)](https://github.com/kododake/AAAnything/releases)
 [![License](https://img.shields.io/badge/license-Proprietary%20%2F%20EULA-orange?style=flat-square)](TERMS_OF_SERVICE.md)

@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AA Anything - Bring Your Favorite Apps to Your Car Screen</title>
-  <meta name="description" content="Unlock your dashboard. AA Anything brings virtually any Android app to your Android Auto display without rooting.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%2232%22%20height=%2232%22><text y=%2226%22 font-size=%2226%22>🚗</text></svg>">
-  <script defer src="https://stats1.kododake.work/script.js" data-website-id="59e70fb3-64a5-4a96-8ab4-5469f2ab6b4b"></script>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
   <style>
     :root {
       --bg-color: #080c16;
@@ -122,7 +121,9 @@
     }
     .gradient-text {
       background: var(--gradient-accent);
+      background-clip: text;
       -webkit-background-clip: text;
+      color: transparent;
       -webkit-text-fill-color: transparent;
     }
     .hero p {
@@ -258,6 +259,7 @@
       font-size: 2.5rem;
       font-weight: 900;
       background: var(--gradient-accent);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 8px;
@@ -298,7 +300,8 @@
   <header>
     <div class="nav-container">
       <a href="index.html" class="brand">
-        <span>🚗</span> AA Anything
+        <img src="assets/icon.png" alt="AA Anything Logo" style="width: 32px; height: 32px; border-radius: 8px;">
+        AA Anything
       </a>
       <div class="nav-links">
         <a href="index.html">Home</a>
@@ -311,6 +314,9 @@
 
   <main class="container">
     <section class="hero">
+      <div style="margin-bottom: 20px;">
+        <img src="assets/icon.png" alt="AA Anything App Icon" style="width: 96px; height: 96px; border-radius: 24px; box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);">
+      </div>
       <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px;">
         <span class="hero-badge">✨ No Root Required</span>
         <span class="hero-badge" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.35); color: #34d399;">📱 Designed for Android 15+</span>
